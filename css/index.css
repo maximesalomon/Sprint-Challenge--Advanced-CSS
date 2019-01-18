@@ -160,6 +160,36 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid lightgrey;
+}
+.navigation .navbar {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.navigation .navbar #logo {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: black;
+  font-family: 'Russo One', sans-serif;
+}
+.navigation .navbar nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 400px;
+  font-size: 1.6rem;
+  padding: 10px 20px 20px 20px;
+}
+.navigation .navbar nav a {
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
