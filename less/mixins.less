@@ -14,15 +14,15 @@
             border-radius: @radius;
 }
 
-.button-style(@color-btn, @width-btn) {
+.button-style(@color-btn, @color-text-btn, @width-btn, @padding-btn, @border-radius-btn) {
     font-size: 1.6rem;
     text-align: center;
-    color: @color-btn;
-    padding: 7px 15px;
+    color: @color-text-btn;
+    padding: @padding-btn;
     width: @width-btn;
-    background-color: @button-color;
-    .border-radius(5px);
+    background-color: @color-btn;
+    .border-radius(@border-radius-btn);
     &:hover {
-        background-color: lighten(@button-color), 10%);
+        background-color: grey;
     }
 }

@@ -4,6 +4,10 @@
     background-color: #f7f7f7;
     border-bottom: 1px solid lightgrey;
     .navbar {
+        @media @phone {
+            width: 400px;
+            margin: 0 0;
+        }
         width: 800px;
         .margin-auto();
         padding: 10px 0;
@@ -17,16 +21,20 @@
             color: black;
             font-family: 'Russo One', sans-serif;
         }
+        
         nav {
             .flex();
             justify-content: space-between;
             .margin-auto();
             width: 400px;
+            @media @phone {
+                // width: 300px;
+            }
             font-size: 1.6rem;
             padding: 10px 20px 20px 20px;
             a {
                 text-decoration: none;
-                color: black; 
+                color: black;
             }
         }
     }
