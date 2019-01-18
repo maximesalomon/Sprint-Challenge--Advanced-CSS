@@ -9,6 +9,10 @@
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="like_button.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -68,11 +72,10 @@
         <div id="demo" class="btn" onclick="myFunction()">Sign Up</div>
       </div>
       <script>
-          function myFunction() {
-            document.getElementById("demo").innerHTML = "🚀";
-          }
-        </script>
-      
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "🚀";
+        }
+      </script>
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
