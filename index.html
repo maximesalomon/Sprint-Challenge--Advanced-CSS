@@ -3,11 +3,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="like_button.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,6 +22,18 @@
 <body>
 
  <!-- navigation code here -->
+  <div class="navigation">
+    <div class="navbar">
+      <a id="logo">SpaceWalkers</a>
+      <nav>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+        <a href="">Sign In</a>
+      </nav>
+    </div>
+  </div>
 
   <div class="container home">
 
@@ -50,12 +67,15 @@
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
-        <div class="btn">
-          Sign Up
-        </div>
+
+
+        <div id="demo" class="btn" onclick="myFunction()">Sign Up</div>
       </div>
-      
+      <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "🚀";
+        }
+      </script>
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>

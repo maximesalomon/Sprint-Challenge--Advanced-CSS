@@ -1,1 +1,45 @@
 // Navigation code here
+
+.navigation {
+    width: 100%;
+    position: fixed;
+    position: 0;
+    opacity: 0.95;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid lightgrey;
+    .navbar {
+        @media @phone {
+            width: 400px;
+            margin: 0 0;
+        }
+        width: 800px;
+        .margin-auto();
+        padding: 10px 0;
+        .flex();
+        flex-direction: column;
+        
+        #logo {
+            .flex();
+            justify-content: center;
+            font-size: 4rem;
+            color: black;
+            font-family: 'Russo One', sans-serif;
+        }
+        
+        nav {
+            .flex();
+            justify-content: space-between;
+            .margin-auto();
+            width: 400px;
+            @media @phone {
+                // width: 300px;
+            }
+            font-size: 1.6rem;
+            padding: 10px 20px 20px 20px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

@@ -2,6 +2,8 @@
 
 .home {
 
+  padding-top: 110px;
+
   .intro {
 
     h2 {
@@ -15,7 +17,7 @@
   }
 
   .space-images {
-    display: flex;
+    .flex();
     flex-wrap: wrap;
     width: 100%;
 
@@ -40,28 +42,47 @@
   }
 
   .walk {
+    @media @phone {
+      .flex();
+      flex-direction: column-reverse;
+      padding: 30px 15px;
+      margin-top: 10px;
+    }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .flex();
     justify-content: center;
 
     .walk-text {
+      @media @phone {
+        width: 100%;
+      }
       width: 50%;
 
       h3 {
+        @media @phone {
+          margin-top: 10px;
+        }
         margin-bottom: 10px;
       }
 
       p {
         margin-bottom: 26px;
       }
-
       .btn {
+        @media @phone {
+          .button-style(@button-color-phone, white, 100%, 20px 15px, 3px);
+        }
+        .button-style(@button-color, white, 88px, 7px 15px, 5px);
       }
     }
 
     .walk-img {
+      @media @phone {
+        width: 100%;
+        margin: 0;
+      }
       width: 46%;
       margin-left: 4%;
       
