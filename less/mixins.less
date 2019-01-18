@@ -8,14 +8,20 @@
     margin: 0 auto;
 }
 
-.button-style() {
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.button-style(@color-btn, @width-btn) {
     font-size: 1.6rem;
     text-align: center;
-    color: white;
+    color: @color-btn;
     padding: 7px 15px;
-    width: 88px;
+    width: @width-btn;
     background-color: @button-color;
-    border-radius: 5px;
+    .border-radius(5px);
     &:hover {
         background-color: lighten(@button-color), 10%);
     }
