@@ -1,11 +1,22 @@
 // Mixins Here
 
+.flex() {
+    display: flex;
+}
+
+.margin-auto() {
+    margin: 0 auto;
+}
+
 .button-style() {
     font-size: 1.6rem;
     text-align: center;
     color: white;
     padding: 7px 15px;
     width: 88px;
-    background-color: rgb(36, 36, 36);
+    background-color: @button-color;
     border-radius: 5px;
+    &:hover {
+        background-color: lighten(@button-color), 10%);
+    }
 }

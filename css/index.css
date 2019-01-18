@@ -251,6 +251,9 @@ footer {
   background-color: #242424;
   border-radius: 5px;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #3e3e3e;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
