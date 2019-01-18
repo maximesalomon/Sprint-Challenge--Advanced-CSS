@@ -23,6 +23,9 @@
     background-color: @color-btn;
     .border-radius(@border-radius-btn);
     &:hover {
-        background-color: grey;
+        background-color: lighten(@button-color, 20%);
+        @media @phone {
+            background-color: lighten(@button-color-phone, 20%);
+          }
     }
 }

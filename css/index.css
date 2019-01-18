@@ -292,11 +292,21 @@ footer {
     border-radius: 3px;
   }
   .home .walk .walk-text .btn:hover {
-    background-color: grey;
+    background-color: #575757;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    background-color: #464669;
   }
 }
 .home .walk .walk-text .btn:hover {
-  background-color: grey;
+  background-color: #575757;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    background-color: #464669;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
